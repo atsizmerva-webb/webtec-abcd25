@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check": "webtec check",
+    "lab": "f(){ cd lab/$1 && node lab; }; f",
     "server": "http-server",
     "clean": "rm -rf node_modules"
   },
