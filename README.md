@@ -1,3 +1,4 @@
+.
 # webtec-abcd25
 
 [![Check kmom](https://github.com/bth-webtec/webtec-abcd25/actions/workflows/check.yml/badge.svg)](https://github.com/bth-webtec/webtec-abcd25/actions/workflows/check.yml)
