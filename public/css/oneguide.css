@@ -1,0 +1,96 @@
+@import url("onormalize.css");
+@import url("oheader.css");
+@import url("ofooter.css");
+@import url("osection.css");
+
+.row {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.row.color1 {
+  background-color: #cba1a1;;
+}
+
+.row.cols1 .col {
+  flex: 1 1 100%;
+}
+
+.row.cols2 .col {
+  flex: 1 1 50%;
+}
+
+.row.cols3 .col {
+  flex: 1 1 33.333%;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+}
+.background {
+  min-height: 20rem;
+  background-image: url('../img/dofft.jpg');
+  background-size: center;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+
+}
+.navlinks a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor:pointer;
+}
+
+/* Responsive styles: when screen is smaller than 600px */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;                /* Show hamburger button on small screens */
+  }
+
+  .nav-links {
+    display: none;                 /* Hide links by default */
+    flex-direction: column;        /* Stack links vertically */
+    position: absolute;            /* Position relative to navbar */
+    top: 50px;                     /* Place below header */
+    right: 0;
+    background-color: #444;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;                /* Space between stacked links */
+  }
+}
+
+.navlinks.active {
+  display: flex;
+   flex-direction: column;
+}
+

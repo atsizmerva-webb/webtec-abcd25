@@ -1,0 +1,28 @@
+/**
+ * Use flexbox container for layout.
+ */
+ .wrap {
+  display: flex;    /* Enables Flexbox layout */
+  flex-wrap: wrap;  /* Allows items to wrap onto the next line if needed */
+  gap: 1rem;        /* Adds spacing between child elements */
+  background-color: #ebebeb; /* Soft Pink */
+  padding: 1rem; 
+  border-image: 2px;
+}
+
+.main {
+  flex: 3;          /* Allocates 3 parts of available space to the main area */
+  background-color: #d6e4ec; 
+  padding: 1rem;                /* Adds space inside the main area */
+  border-radius: 30px;           /* Rounds the corners of the main area */
+}
+
+
+.aside {
+  clear: 1;       
+  background-color: #e8e1d0; 
+  padding: 2rem;               /* Adds space inside the sidebar */
+  border-radius: 30px; 
+  margin-right: 100%;
+  
+}
