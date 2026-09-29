@@ -1,7 +1,9 @@
 @import url("onormalize.css");
 @import url("oheader.css");
 @import url("ofooter.css");
-@import url("osection.css");
+@import url("responsive-navbar.css");
+
+
 
 .row {
   display: flex;
@@ -31,10 +33,12 @@
   align-items: center;
   min-height: 10rem;
 }
+
+
 .background {
   min-height: 20rem;
   background-image: url('../img/dofft.jpg');
-  background-size: center;
+  background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
@@ -47,31 +51,29 @@
   position: sticky;
 }
 
-.navlinks {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  list-style: none;
 
-}
-.navlinks a{
-  text-decoration: none;
-  color: black;
-}
-
+/* Hamburger menu button */
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor:pointer;
+  display: none;                   /* Hidden by default */
+  background: none;                /* No background */
+  border: none;                    /* No border */
+  font-size: 1.8em;                /* Bigger font for hamburger icon */
+  color: rgb(0, 0, 0);                    /* White color */
+  cursor: pointer;                 /* Pointer cursor on hover */
 }
 
 /* Responsive styles: when screen is smaller than 600px */
 @media (max-width: 600px) {
+
   .menu-toggle {
     display: block;                /* Show hamburger button on small screens */
+
   }
+
+    /* Show menu when 'show' class is added by JS */
+    .nav-links.show {
+      display: flex;
+ }
 
   .nav-links {
     display: none;                 /* Hide links by default */
@@ -79,18 +81,23 @@
     position: absolute;            /* Position relative to navbar */
     top: 50px;                     /* Place below header */
     right: 0;
-    background-color: #444;
+    background-color: #ffffff;
     width: 150px;
     padding: 10px;
+
   }
 
-  .nav-links li {
-    margin: 10px 0;                /* Space between stacked links */
-  }
+
+.nav-links li {
+  margin-left: 20px;               /* Space between links */
 }
 
-.navlinks.active {
-  display: flex;
-   flex-direction: column;
+.nav-links a {
+  text-decoration: none;           /* Remove underline */
+  color: white;                    /* White text for links */
 }
+
+}
+
+
 

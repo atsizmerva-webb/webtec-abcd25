@@ -7,7 +7,7 @@
   gap: 1rem;        /* Adds spacing between child elements */
   background-color: #ebebeb; /* Soft Pink */
   padding: 1rem; 
-  border-image: 2px;
+  border: 2px solid;
 }
 
 .main {
@@ -19,7 +19,7 @@
 
 
 .aside {
-  clear: 1;       
+  clear: both;       
   background-color: #e8e1d0; 
   padding: 2rem;               /* Adds space inside the sidebar */
   border-radius: 30px; 

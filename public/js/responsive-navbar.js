@@ -9,9 +9,6 @@ const menuToggle = document.getElementById('menu-toggle')
 // Get the navigation links container by its ID
 const navLinks = document.getElementById('nav-links')
 
-console.log(menuToggle)
-console.log(navLinks)
-
 // Add a click event listener to the menu button
 menuToggle.addEventListener('click', () => {
   // Toggle the 'show' class on the nav links to show/hide the menu
