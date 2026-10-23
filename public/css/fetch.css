@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.winner {
+  background-color: lightgreen;
+  font-weight: bold;
+}
+
+table {
+
+  margin-left: auto;
+  margin-right: auto ;
+  border-collapse: collapse;
+  text-align: center;
+
+
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.table-container table {
+  width: 80%;
+  max-width: 1000px;
+
+}
+
+th, 
+td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+th {background-color: #f2f2f2;
+
+}
+
+#year {
+  display: block;
+  margin: 10px auto;
+
+}
+
+
+
+
+label[for="year"]{
+  display: block;
+  text-align: center;
+  margin: 20px auto 10px;
+}
