@@ -1,0 +1,62 @@
+
+  /* General styling for the footer */
+  .sitefooter {
+    border-top: 2px solid #a54c4c; /* Forest green border */
+    background-color: #ffffff;      /* Dark gray-green background */
+    color: #000000;                 /* Light/white text */
+    padding: 1.5rem 1rem;             /* Reduce padding for a shorter footer */
+    font-family: sans-serif; /* Font for footer text */
+  }
+  
+  /* Triptych layout */
+  .footer-triptych {
+    display: flex;                  /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute columns evenly */
+    gap: 2rem;                      /* Space between columns */
+    margin-bottom: 1.5rem;          /* Reduce space below the triptych */
+  }
+  
+  /* Individual footer column */
+  .footer-column {
+    flex: 1;                      /* Equal width for each column */
+    background-color: #a54c4c;  /* Slightly lighter gray background for pop */
+    padding: 2.5rem;                /* Add padding inside columns */
+    border-radius: 8px;           /* Rounded corners for columns */
+  }
+
+  .footer-column h3 {
+    margin: 0 0 0.5rem;   /* Remove top margin and keep space below */
+  }
+  .footer-column p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .footer-column ul {
+    list-style: none;     /* Remove bullet points */
+    padding: 0;           /* Remove padding */
+    margin: 0 0 1.5rem; /* Adjust margin */
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem; /* Space between list items */
+  }
+  
+  .footer-column ul li a {
+    color: #ffffff;                             /* Light text for links */
+    text-decoration: none;                        /* Remove underline */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth hover effect */
+  }
+  
+  .footer-column ul li a:hover {
+    color: #a54c4c;             /* Lighter green: passes WCAG AA (4.5:1) text contrast on the dark column background */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Footer bottom row */
+  .footer-bottom {
+    text-align: center;           /* Center align the text */
+    font-size: 0.85rem;           /* Smaller text size */
+    border-top: 1px solid #ffffff;   /* Subtle border at the top */
+    padding-top: 1.5rem;          /* Reduce space above the text */
+  }
