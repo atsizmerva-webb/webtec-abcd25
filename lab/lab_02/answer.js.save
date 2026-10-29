@@ -1,10 +1,13 @@
-q/**
+/**
+
  * This file contains the functions you shall implement to solve the lab.
  * Implement them one by one and check if they pass all tests.
  * 
  * Execute the lab in the browser through lab.html and review the output in the 
  * console, or execute the lab through node using `node lab` in the terminal.
  */
+
+
 
 
 
@@ -16,7 +19,7 @@ q/**
  */
 export function isLarger (value) {
   // TODO: Write your code here.
-  return value < 42
+  return value > 42
 }
 
 
@@ -67,7 +70,13 @@ export function isOddEven (value) {
  */
 export function blackJack (value1, value2, value3) {
   // TODO: Write your code here.
-  return -1
+  if (sum === 21){
+    return "Black Jack"
+} else if (sum > 21){
+  return "Busted"
+} else {
+  return "Draw"
+}
 }
 
 
@@ -84,8 +93,16 @@ export function blackJack (value1, value2, value3) {
  */
 export function gradeChecker (score) {
   // TODO: Write your code here.
-  return -1
+  if (score >= 90) {
+    return "A"
+} else if (score >= 80){
+  return "B"
+}else if (score >= 70){
+  return "C"
+} else {
+  return "F"
 }
+
 
 
 
@@ -194,14 +211,3 @@ export function calculator (value1, value2, op, reverse=false) {
 
   return -1
 }
-
-q
-X
-
-   xx <xXxX
-
-
-
-
-
-X
