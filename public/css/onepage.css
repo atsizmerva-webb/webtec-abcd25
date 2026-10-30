@@ -1,0 +1,86 @@
+@import url("onormalize.css");
+@import url("oheader.css");
+@import url("ofooter.css");
+@import url("responsive-navbar.css");
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.row.color1 {
+  background-color: #a54c4c;
+
+}
+
+.row.color2 {
+  background-color: #ffffff;
+}
+
+
+
+.row.cols1 .col {
+  flex: 1 1 100%;
+}
+
+.row.cols2 .col {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.row.cols3 .col {
+  flex: 1 1 calc(33.333% - 1rem);
+}
+
+
+
+
+.background {
+  min-height: 40rem;
+  background-image: url('../img/love.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  color: #ffffff;
+  text-align: justify;
+  font-size: xx-large;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+
+#dofter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#dofter .col {
+  flex: 1 1 0;
+  min-width: 200px;
+}
+
+
+
+
+
+
+

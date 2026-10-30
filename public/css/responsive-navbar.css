@@ -1,0 +1,143 @@
+/**
+ * Style for example showing responsive navbar.
+ */
+ body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header as a flex container with two columns */
+.header {
+  display: flex;                  /* Use flexbox */
+  justify-content: space-between; /* Space between left and right columns */
+  align-items: center;            /* Vertically center items */
+  padding: 10px 20px;             /* Add some padding */
+  background-color: #81d4a5;       /* Dark background color */
+  color: white;                   /* White text color */
+}
+
+/* Left column - logo */
+.logo {
+  font-size: 1.5em;               /* Increase font size for logo */
+}
+
+/* Right column - navigation bar */
+.navbar {
+  position: relative;              /* Optional: needed if dropdown uses absolute positioning */
+}
+
+/* Navigation links displayed in a row */
+.nav-links {
+  list-style: none;                /* Remove bullets */
+  display: flex;                   /* Display links in a row */
+  margin: 0;
+  padding: 0;
+}
+
+.main h1 {
+  font-size: 1.8rem;  /* Larger font size for the title */
+  color: #000000fe;        /* Darker color for contrast */
+  margin: 0;          /* Removes default margin */
+}
+
+.article h1 {
+  font-size: 1.8rem;  /* Larger font size for the title */
+  color: #fffffffe;        /* Darker color for contrast */
+  margin: 0;          /* Removes default margin */
+}
+
+.nav-links li {
+  margin-left: 20px;               /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none;           /* Remove underline */
+  color: white;                    /* White text for links */
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;                   /* Hidden by default */
+  background: none;                /* No background */
+  border: none;                    /* No border */
+  font-size: 1.8em;                /* Bigger font for hamburger icon */
+  color: rgb(0, 0, 0);                    /* White color */
+  cursor: pointer;                 /* Pointer cursor on hover */
+}
+
+/* Responsive styles: when screen is smaller than 600px */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;                /* Show hamburger button on small screens */
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links {
+    display: none;                 /* Hide links by default */
+    flex-direction: column;        /* Stack links vertically */
+    position: absolute;            /* Position relative to navbar */
+    top: 50px;                     /* Place below header */
+    right: 0;
+    background-color: #000000;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;                /* Space between stacked links */
+  }
+}
+
+.siteheader {
+  position: relative;
+}
+
+@media (max-width: 600px){
+  .siteheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+.siteheader #nav-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #221f1f;
+  width: 150px;
+  padding: 10px;
+  z-index: 10;
+}
+.siteheader #nav-links.show {
+  display: block;
+}
+.siteheader #nav-links li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.siteheader #nav-links li{
+  margin: 10px 0;
+}
+
+.siteheader #nav-links a {
+  color: #ffffff;
+}
+
+.siteheader .menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+}
+
+
+  
+
