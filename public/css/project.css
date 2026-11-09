@@ -4,8 +4,13 @@
  body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
-  position: absolute;
-}
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  
+  }
+
 
 /* Header as a flex container with two columns */
 .header {
@@ -153,20 +158,6 @@
 
   
 
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-}
-
 #setup {
   max-width: 400px;
   margin: 20px auto;
@@ -192,8 +183,9 @@ button {cursor:pointer;
 #game-area {
   position: relative;
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   min-height: 300px;
+  margin: 20px auto;
   overflow: hidden;
   background-size: cover;
   background-position: center;
