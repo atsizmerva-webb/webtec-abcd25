@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankspelet 2</title>
+  <link rel="stylesheet" href="css/project.css">
+
+</head>
+<body>
+
+  <header>
+    <button class="menu-toggle" id="menu-toggle" >&#9776;</button>
+    
+    <nav id="nav-links">
+      <ul>
+        <a href="onepageproject.html" class="spel-titel">"Hur spelar jag?"</a>
+      </ul>
+    </nav>
+    </header>
+    
+
+  
+  <h1>Ankspelet 2</h1>
+  <section id="setup">
+    <h2>Inställningar</h2>
+    <label for="background">Välj bakgrund (0 = slumpa):</label>
+    <input type="number" id="background" min="0" max="5" value="0">
+
+    <label for="difficulty">Välj svårighetsgrad:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="selected">Normal</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <label for="speed">Ankans hastighet:</label>
+    <select id="speed">
+      <option value="1">1 sekund</option>
+      <option value="2">2 sekunder</option>
+      <option value="3">3 sekunder</option>
+    </select>
+
+    <button id="start-button">Starta spelet</button>
+    <p id="loading" hidden>Laddar bilder...</p>
+  </section>
+
+  <section id="game" hidden>
+    <p>Tid kvar: <span id="time">0</span>sekunder</p>
+    <p>Poäng: <span id="score">0</span></p>
+
+    <div id="game-area">
+      <img id="duck" alt="Anka">
+      <img id="duck2" alt="Anka2">
+    </div>
+  </section>
+
+
+<section id="result" hidden>
+  <h2>Spelet är slut!</h2>
+  <p>Din poäng: 
+    <span id="final-score">0</span></p>
+
+    <h3>Highscorelista</h3>
+    <table id="highscore-table">
+    <thead>
+      <tr>
+        <th>Placering</th>
+        <th>Poäng</th>
+        <th>Svårighetsgrad</th>
+      </tr>
+    </thead>
+    <tbody id="highscore-body">
+
+    </tbody>
+  </table>
+
+  <button id="restart-button">Spela igen</button>
+</section>
+
+
+
+
+  <script src="js/project.js" defer></script>
+</body>
+</html>

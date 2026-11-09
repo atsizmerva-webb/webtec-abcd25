@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankspel</title>
+  <link rel="stylesheet" href="css/duckhunt.css">
+
+</head>
+<body>
+  
+  <h1>Ankspel</h1>
+  <section id="setup">
+    <h2>Inställningar</h2>
+    <label for="background">Välj bakgrund (0 = slumpa):</label>
+    <input type="number" id="background" min="0" max="5" value="0">
+
+    <label for="duration">Speltid:</label>
+    <select id="duration">
+      <option value="10">10 sekunder</option>
+      <option value="20">20 sekunder</option>
+      <option value="30">30 sekunder</option>
+    </select>
+
+    <label for="speed">Ankans hastighet:</label>
+    <select id="speed">
+      <option value="1">1 sekund</option>
+      <option value="2">2 sekunder</option>
+      <option value="3">3 sekunder</option>
+    </select>
+
+    <button id="start-button">Starta spelet</button>
+    <p id="loading" hidden>Laddar bilder...</p>
+  </section>
+
+  <section id="game" hidden>
+    <p>Tid kvar: <span id="time">0</span>sekunder</p>
+    <p>Poäng: <span id="score">0</span></p>
+
+    <div id="game-area">
+      <img id="duck" alt="Anka">
+    </div>
+  </section>
+
+
+<section id="result" hidden>
+  <h2>Spelet är slut!</h2>
+  <p>Din poäng: <span id="final-score">0</span></p>
+  <button id="restart-button">Spela igen</button>
+</section>
+
+  <script src="js/duckhunt.js" defer></script>
+</body>
+</html>

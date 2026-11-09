@@ -1,0 +1,46 @@
+/**
+ * Use flexbox container for layout.
+ */
+ .wrap {
+  display: flex;    /* Enables Flexbox layout */
+  flex-wrap: wrap;  /* Allows items to wrap onto the next line if needed */
+  gap: 1rem;        /* Adds spacing between child elements */
+  background-color: #ebebeb; /* white */
+  padding: 1rem; 
+  border: 2px solid;
+}
+
+.main {
+  flex: 3;          /* Allocates 3 parts of available space to the main area */
+  background-color: #dfd4bb; 
+  padding: 1rem;                /* Adds space inside the main area */
+  border-radius: 30px;           /* Rounds the corners of the main area */
+}
+
+.main h1 {
+  color: black;
+}
+
+
+.aside {
+       
+  background-color: #dfd4bb; 
+  padding: 2rem;               /* Adds space inside the sidebar */
+  border-radius: 30px; 
+  flex: 1;
+  
+}
+
+@media (max-width: 700px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .main {
+    order: 1;
+  }
+
+  .aside {
+    order: 2;
+  }
+}

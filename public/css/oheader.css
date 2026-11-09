@@ -1,0 +1,104 @@
+
+.siteheader {
+  display: flex;                 
+  justify-content: space-between; 
+  align-items: center;    
+  gap: 0.5rem;     
+  padding: 1rem;             /* Add spacing inside the header (1rem top/bottom, 2rem left/right) */
+  background-color: #ffffffcd;    
+  border-bottom: 2px solid #000000;   /* Add a forest green border at the bottom */
+  box-shadow: 0 2px 4px rgba(121, 79, 79, 0.1);   /* Apply a subtle shadow for a slight 3D effect */
+}
+
+.siteheader div a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.siteheader nav ul {
+  display: flex;    /* Arrange navigation links in a horizontal row */
+  flex-wrap: wrap;
+  gap: 1rem;        /* Add spacing between individual navigation links */
+  list-style: none; /* Remove default bullet points from the list */
+  margin: 0;        /* Remove default margin around the list */
+  padding: 0;       /* Remove default padding around the list */
+
+ 
+}
+/* Styling for navigation links */
+.siteheader nav a {
+  text-decoration: none;  /* Remove the default underline from links */
+  color: #000000;       /* Set a dark green color for the navigation links */
+  font-size: 1rem;        /* Define the font size for the links */
+  font-weight: bold;      /* Make the text bold for better readability */
+  border-bottom: 2px solid transparent; /* Reserve space for the hover underline so nothing jumps */
+  transition: color 0.3s; /* Add a smooth transition for color and border changes on hover */
+}
+
+/* Hover effect for navigation links */
+.siteheader nav a:hover {
+  color: #1f6f46;                         /* Darker forest green: passes WCAG AA (4.5:1) text contrast on the light green header background */
+  border-bottom-color: #2e8b57;           /* Reveal the forest green underline when hovered */
+}
+
+
+/* Styling for the logo image */
+.siteheader img {
+  width: 45px;  /* Set the width of the logo */
+  height: 45px; /* Set the height of the logo, ensuring it is square */
+}
+
+/* Styling for the text next to the logo */
+.siteheader span {
+  
+  font-size: 1.5rem; 
+  color: #000000;   
+  font-family: 'Times New Roman', sans-serif; 
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .siteheader {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .siteheader nav {
+    width: 100%;
+  }
+
+  .siteheader nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .siteheader nav ul.show {
+    display: flex;
+  }
+}
+
+/* Styling for the logo and heading link */
+.siteheader .brand {
+  display: none;          /* Arrange the logo and text in a horizontal row */
+  align-items: center;    /* Align the logo and text vertically at the center */
+  gap: 0.5rem;            /* Add spacing between the logo image and the text */
+  text-decoration: none;  /* Remove the default underline from the link */
+  color: inherit;         /* Inherit the color from the parent element for consistency */
+}
+
+/* General styling for the header */

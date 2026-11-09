@@ -1,0 +1,9 @@
+/* Basic normalization */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Removes the browser's default 8px margin around the page */
+}
